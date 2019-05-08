@@ -1,7 +1,7 @@
 #!/bin/bash
 apk update
 apk add py-pip terraform git ansible curl docker
-pip install awscli --upgrade --user
+pip install awscli requests simplejson boto3 --upgrade --user
 curl -o aws-iam-authenticator https://amazon-eks.s3-us-west-2.amazonaws.com/1.12.7/2019-03-27/bin/linux/amd64/aws-iam-authenticator
 mv aws-iam-authenticator /bin/
 chmod 755 /bin/aws-iam-authenticator
